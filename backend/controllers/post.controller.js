@@ -20,7 +20,6 @@ export const getAllPosts = async (req, res) => {
 
     res.status(200).json(posts);
   } catch (error) {
-    console.log("Error in getAllPosts controller", error.message);
     res.status(500).json({ error: error.message });
   }
 };
@@ -47,7 +46,6 @@ export const getFollowingPosts = async (req, res) => {
 
     res.status(200).json(followingPosts);
   } catch (error) {
-    console.log("Error in getFollowingPosts controller", error.message);
     res.status(500).json({ error: error.message });
   }
 };
@@ -80,7 +78,6 @@ export const createPost = async (req, res) => {
     await newPost.save();
     res.status(201).json(newPost);
   } catch (error) {
-    console.log("Error in createPost controller", error.message);
     res.status(500).json({ error: error.message });
   }
 };
@@ -104,7 +101,6 @@ export const getUserPosts = async (req, res) => {
 
     res.status(200).json(posts);
   } catch (error) {
-    console.log("Error in getUserPosts controller", error.message);
     res.status(500).json({ error: error.message });
   }
 };
@@ -144,7 +140,6 @@ export const likeUnlikePost = async (req, res) => {
       res.status(200).json(updatedLikes);
     }
   } catch (error) {
-    console.log("Error in likeUnlikePost controller", error.message);
     res.status(500).json({ error: error.message });
   }
 };
@@ -168,7 +163,6 @@ export const getLikedPosts = async (req, res) => {
 
     res.status(200).json(likedPosts);
   } catch (error) {
-    console.log("Error in getLikedPosts controller", error.message);
     res.status(500).json({ error: error.message });   
   }
 };
@@ -193,20 +187,8 @@ export const commentOnPost = async (req, res) => {
     post.comments.push(comment);
     await post.save();
 
-    // const commentNotification = new Notification({
-    //   type: "comment",
-    //   from: userId,
-    //   to: post.user,
-    // });
-
-    // const check = await commentNotification.save();
-    // console.log(check);
-
-    // const updatedPosts = post.comments.filter((id) => id.toString() !== userId.toString());
-
     res.status(201).json(post);
   } catch (error) {
-    console.log("Error in commentOnPost controller", error.message);
     res.status(500).json({ error: error.message });
   }
 };
@@ -233,7 +215,6 @@ export const deletePost = async (req, res) => {
 
     res.status(200).json({ message: "Post deleted successfully" });
   } catch (error) {
-    console.log("Error in deletePost controller", error.message);
     res.status(500).json({ error: error.message });
   }
 };

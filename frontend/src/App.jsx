@@ -22,7 +22,6 @@ function App() {
         const data = await res.json();
         if (data.error) return null;
         if (!res.ok) throw new Error(data.error || "Failed to fetch user");
-        console.log(data);
         return data;
       } catch (error) {
         console.error(error);
@@ -31,8 +30,6 @@ function App() {
     },
     retry: false
   });
-
-  console.log(authUser);
 
   if (isLoading)
     return (

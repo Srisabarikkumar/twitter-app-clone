@@ -14,7 +14,6 @@ const useFollow = () => {
 
         if (!res.ok) throw new Error(data.error || "Something went wrong");
         toast.success(`You started following ${data.username}`);
-        console.log(data);
         return data;
       } catch (error) {
         console.error(error);

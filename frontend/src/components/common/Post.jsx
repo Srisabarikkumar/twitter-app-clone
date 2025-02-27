@@ -31,8 +31,6 @@ const Post = ({ post }) => {
         const data = await res.json();
 
         if (!res.ok) throw new Error(data.error || "Something went wrong");
-
-        console.log(data);
         return data;
       } catch (error) {
         console.error(error);
