@@ -75,7 +75,7 @@ This is a clone of the popular social media platform X (twitter), built using mo
     http://localhost:3000
     ```
 
-## Usage
+## Usage:
 
 1. **Sign Up**: Create a new account using the sign-up page.
 2. **Log In**: Log in with your credentials.
