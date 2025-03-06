@@ -14,7 +14,7 @@ This is a clone of the popular social media platform X (twitter), built using mo
 - [Contributing](#contributing)
 - [License](#license)
 
-### Features:
+## Features:
 
 - **User Authentication**:Sign up, log in, and log out functionality.
 - **Tweet Creation**: Users can create and post tweets.
