@@ -31,7 +31,7 @@ This is a clone of the popular social media platform X (twitter), built using mo
 
    ![](https://res.cloudinary.com/dfzlizgq1/image/upload/v1741267042/wn7lxx0suojwkhbmqjnn.png)
 
-2. **Home Feed**
+2. **Home Feed/Profile Page**
 
    ![](https://res.cloudinary.com/dfzlizgq1/image/upload/v1741267241/che0jpwwjpueq8fdmjgp.png)
    
